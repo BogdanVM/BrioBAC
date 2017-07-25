@@ -1,0 +1,551 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D0A50934-6690-45D7-8144-697E10333AB4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bac</RootNamespace>
+    <AssemblyName>Bac</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icons8-Ios7-Users-Student-Filled.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BacDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BacDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CalculatorStiintific.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalculatorStiintific.Designer.cs">
+      <DependentUpon>CalculatorStiintific.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cont_nou.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cont_nou.Designer.cs">
+      <DependentUpon>Cont_nou.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Meniu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meniu.Designer.cs">
+      <DependentUpon>Meniu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TesteSiExamene.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TesteSiExamene.Designer.cs">
+      <DependentUpon>TesteSiExamene.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestIQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestIQ.Designer.cs">
+      <DependentUpon>TestIQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reguli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reguli.Designer.cs">
+      <DependentUpon>Reguli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestFinalizat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestFinalizat.Designer.cs">
+      <DependentUpon>TestFinalizat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestNefinalizat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestNefinalizat.Designer.cs">
+      <DependentUpon>TestNefinalizat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informatii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informatii.Designer.cs">
+      <DependentUpon>Informatii.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModInvatare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModInvatare.Designer.cs">
+      <DependentUpon>ModInvatare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Browser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Browser.Designer.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formule.Designer.cs">
+      <DependentUpon>Formule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ajutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajutor.Designer.cs">
+      <DependentUpon>Ajutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfilUtilizator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfilUtilizator.Designer.cs">
+      <DependentUpon>ProfilUtilizator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SchimbareParola.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchimbareParola.Designer.cs">
+      <DependentUpon>SchimbareParola.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setari.Designer.cs">
+      <DependentUpon>Setari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StergeCont.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StergeCont.Designer.cs">
+      <DependentUpon>StergeCont.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProgramaSiVariante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgramaSiVariante.Designer.cs">
+      <DependentUpon>ProgramaSiVariante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Autentificare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Autentificare.Designer.cs">
+      <DependentUpon>Autentificare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CalculatorStiintific.resx">
+      <DependentUpon>CalculatorStiintific.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cont_nou.resx">
+      <DependentUpon>Cont_nou.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meniu.resx">
+      <DependentUpon>Meniu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TesteSiExamene.resx">
+      <DependentUpon>TesteSiExamene.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestIQ.resx">
+      <DependentUpon>TestIQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reguli.resx">
+      <DependentUpon>Reguli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestFinalizat.resx">
+      <DependentUpon>TestFinalizat.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestNefinalizat.resx">
+      <DependentUpon>TestNefinalizat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informatii.resx">
+      <DependentUpon>Informatii.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModInvatare.resx">
+      <DependentUpon>ModInvatare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Browser.resx">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formule.resx">
+      <DependentUpon>Formule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ajutor.resx">
+      <DependentUpon>Ajutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfilUtilizator.resx">
+      <DependentUpon>ProfilUtilizator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchimbareParola.resx">
+      <DependentUpon>SchimbareParola.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setari.resx">
+      <DependentUpon>Setari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StergeCont.resx">
+      <DependentUpon>StergeCont.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgramaSiVariante.resx">
+      <DependentUpon>ProgramaSiVariante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Autentificare.resx">
+      <DependentUpon>Autentificare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="BacDataSet.xsc">
+      <DependentUpon>BacDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BacDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BacDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BacDataSet.xss">
+      <DependentUpon>BacDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet.xsc">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database1DataSet.xss">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings-4-16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12q9OUb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4567751-Vector-illustration-of-seamless-math-background-Stock-Vector-algebra.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\286.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\286_1370.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back-button-hi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back-button-hi1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blafibutton.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blafibutton1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back-button-hi2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\286_1365.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\286_1368.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\286_1366.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\286_1369.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\286_1367.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11971212312045077795webmichl_powerbutton_2_states__on_off_.svg_.med_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\306.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\306_1485.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\306_14851.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\306_1486.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\306_1487.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\306_1488.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\306_1489.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\306_1490.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bac.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bacalaureat-2014-totul-despre-calendar-subiecte-si-rezultate-bac-2014.jpg.ico" />
+    <Content Include="Bac_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Bac.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\Screenshot_2017-02-01-08-20-381.png" />
+    <None Include="Resources\windows-7-new-logo-image.jpg" />
+    <None Include="Resources\images %283%29.jpg" />
+    <None Include="Resources\operations-application-fractal-background.jpg" />
+    <None Include="Resources\images4.jpg" />
+    <None Include="Resources\images %282%293.jpg" />
+    <None Include="Resources\images %281%292.jpg" />
+    <None Include="Resources\images3.jpg" />
+    <None Include="Resources\Users-Change-User-icon.png" />
+    <None Include="Resources\Sound-off-icon.png" />
+    <None Include="Resources\Untitled.png" />
+    <None Include="Resources\Books-2-icon.png" />
+    <None Include="Resources\Books-2-icon1.png" />
+    <None Include="Resources\Books-1-icon.png" />
+    <None Include="Resources\Calculator-icon1.png" />
+    <Content Include="Icons8-Ios7-Users-Student-Filled.ico" />
+    <None Include="Resources\Apps-password-icon.png" />
+    <None Include="Resources\background-cool-wallpaper-3-3-s-307x512.jpg" />
+    <None Include="Resources\Blue-background-picture-material-12-40641.jpg" />
+    <None Include="Resources\background.jpg" />
+    <None Include="Resources\1277070853.or.9937.png" />
+    <None Include="Resources\1277070853.or.99371.png" />
+    <None Include="Resources\1277070853.or.99372.png" />
+    <Content Include="Resources\CalculPrescurtat.jpg" />
+    <None Include="Resources\Delete-group-icon.png" />
+    <None Include="Resources\cool-background-photos-2-3-s-307x512.jpg" />
+    <None Include="Resources\download1.jpg" />
+    <None Include="Resources\cool-background-photos-2-3-s-307x5121.jpg" />
+    <None Include="Resources\cool-background-photos-2-3-s-307x5122.jpg" />
+    <None Include="Resources\cool-background-photos-2-3-s-307x5123.jpg" />
+    <None Include="Resources\cool-background-photos-2-3-s-307x5124.jpg" />
+    <None Include="Resources\cool-background-photos-2-3-s-307x5125.jpg" />
+    <None Include="Resources\cool-background-photos-2-3-s-307x5126.jpg" />
+    <None Include="Resources\cool-background-photos-2-3-s-307x5127.jpg" />
+    <None Include="Resources\cool-background-photos-2-3-s-307x5128.jpg" />
+    <None Include="Resources\cool-background-photos-2-3-s-307x5129.jpg" />
+    <None Include="Resources\cool-background-photos-2-3-s-307x51210.jpg" />
+    <None Include="Resources\cool-background-photos-2-3-s-307x51211.jpg" />
+    <None Include="Resources\cool-background-photos-2-3-s-307x51212.jpg" />
+    <None Include="Resources\cool-background-photos-2-3-s-307x51213.jpg" />
+    <None Include="Resources\cool-background-photos-2-3-s-307x51214.jpg" />
+    <None Include="Resources\cool-background-photos-2-3-s-307x51215.jpg" />
+    <None Include="Resources\cool-background-photos-2-3-s-307x51216.jpg" />
+    <None Include="Resources\cool-background-photos-2-3-s-307x51217.jpg" />
+    <Content Include="Resources\Ecuatia.png" />
+    <None Include="Resources\Go-back-icon.png" />
+    <None Include="Resources\Screenshot_2017-02-01-08-20-38.png" />
+    <None Include="Resources\Fără titlu.jpg" />
+    <None Include="Resources\asvd.png" />
+    <None Include="Resources\Apps-File-Formula-icon.png" />
+    <None Include="Resources\Formula-icon.png" />
+    <None Include="Resources\k-formula-kfo-icon.png" />
+    <None Include="Resources\Office-Customer-Male-Light-icon.png" />
+    <None Include="Resources\Home-icon.png" />
+    <None Include="Resources\Actions-process-stop-icon.png" />
+    <None Include="Resources\Button-Play-icon.png" />
+    <None Include="Resources\Refresh-icon.png" />
+    <None Include="Resources\Actions-go-next-icon1.png" />
+    <None Include="Resources\Actions-go-previous-icon.png" />
+    <None Include="Resources\Log-Out-icon.png" />
+    <None Include="Resources\Actions-configure-toolbars-icon.png" />
+    <None Include="Resources\Editing-Delete-icon.png" />
+    <None Include="Resources\Books-icon %282%29.png" />
+    <None Include="Resources\books-icon %281%29.png" />
+    <None Include="Resources\Book-icon.png" />
+    <None Include="Resources\books-icon.png" />
+    <None Include="Resources\Actions-go-next-icon.png" />
+    <None Include="Resources\Calculator-icon.png" />
+    <None Include="Resources\Smiley-sad-icon.png" />
+    <None Include="Resources\Close-2-icon.png" />
+    <None Include="Resources\Emotes-face-smile-icon.png" />
+    <None Include="Resources\Ok-icon.png" />
+    <None Include="Resources\Time-And-Date-Stopwatch-icon.png" />
+    <None Include="Resources\Stopwatch-icon.png" />
+    <None Include="Resources\Search-Results-icon %281%29.png" />
+    <None Include="Resources\arrow-skip-right-icon.png" />
+    <None Include="Resources\Emoticon-Thinking-Confused-Shrug-icon.png" />
+    <None Include="Resources\Professor-icon.png" />
+    <None Include="Resources\Actions-media-skip-forward-icon.png" />
+    <None Include="Resources\Hourglass-Sandclock-icon.png" />
+    <None Include="Resources\Application-SB-icon.png" />
+    <None Include="Resources\Tests-icon.png" />
+    <None Include="Resources\Mind-Map-Paper-icon.png" />
+    <None Include="Resources\Study-icon.png" />
+    <None Include="Resources\Body-Brain-icon.png" />
+    <None Include="Resources\Zoom-icon.png" />
+    <None Include="Resources\Administrator-icon1.png" />
+    <None Include="Resources\Settings-icon.png" />
+    <None Include="Resources\Clock-icon.png" />
+    <None Include="Resources\Administrator-icon.png" />
+    <None Include="Resources\Actions-contact-new-icon.png" />
+    <None Include="Resources\Login-icon.png" />
+    <None Include="Resources\maths.jpg" />
+    <None Include="Resources\tree1.jpg" />
+    <None Include="Resources\tree.jpg" />
+    <None Include="Resources\images %282%292.jpg" />
+    <None Include="Resources\images %281%291.jpg" />
+    <None Include="Resources\images2.jpg" />
+    <None Include="Resources\images.png" />
+    <None Include="Resources\images %282%291.jpg" />
+    <None Include="Resources\images %281%29.jpg" />
+    <None Include="Resources\images1.jpg" />
+    <None Include="Resources\download %283%29.jpg" />
+    <None Include="Resources\download %281%292.jpg" />
+    <None Include="Resources\download %282%291.jpg" />
+    <None Include="Resources\download %281%291.jpg" />
+    <None Include="Resources\download %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
